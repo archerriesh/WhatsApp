@@ -7,8 +7,7 @@ body{
     width: 100%;
     font-family: Helvetica, sans-serif;
     background-color: #202020;
-    overflow-y: hidden;
-    overflow-x: hidden;
+
 }
 
 nav{
@@ -142,8 +141,7 @@ aside .bawah{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .isi-chat nav{
@@ -154,6 +152,7 @@ aside .bawah{
     display: flex;
     padding: 10px; 
     flex-shrink: 0;
+    z-index: 10;
 }
 
 .isi-chat .contact-info h5{
@@ -181,6 +180,8 @@ aside .bawah{
     align-items: center;
     padding: 15px;
     margin-bottom: 15px;
+    position: sticky;
+    z-index: 10;
 }
 
 .typing h5{
@@ -192,6 +193,33 @@ aside .bawah{
 
 .typing i{
     color: white;
+}
+
+.chat{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 110px);
+}
+
+.abu{
+    width: fit-content;
+    background-color: #353535;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    align-self: flex-start;
+}
+
+.ijo{
+    width: fit-content;
+    background-color: #005c4b;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    align-self: flex-end;
 }
 
 /* width */
